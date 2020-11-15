@@ -26,7 +26,11 @@ export default class Highchart extends Vue {
   private option!: object; // highcharts图表配置项
   @Prop({
     type: Object,
-    default: () => ({})
+    default: () => ({
+      credits: {
+        enabled: false
+      }
+    })
   })
   private opts!: object; // highcharts图表全局配置项
   @Prop({
